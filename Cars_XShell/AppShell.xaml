@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:Cars_XShell.Views"
+    xmlns:controls="clr-namespace:Cars_XShell.Controls"
+    x:Class="Cars_XShell.AppShell">
+    <Shell.BackgroundColor>white</Shell.BackgroundColor>
+    <Shell.ForegroundColor>darkgray</Shell.ForegroundColor>
+    <Shell.DisabledColor>lightgray</Shell.DisabledColor>
+    <Shell.TitleColor>black</Shell.TitleColor>
+    <Shell.UnselectedColor>gray</Shell.UnselectedColor>
+    <Shell.TabBarIsVisible>true</Shell.TabBarIsVisible>
+
+    <Shell.FlyoutHeader>
+        <controls:FlyoutHeader/>
+    </Shell.FlyoutHeader>
+
+    <Shell.FlyoutFooter>
+        <controls:FlyoutFooter/>
+    </Shell.FlyoutFooter>
+
+    <TabBar FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Route="tata"
+             Title="Tata"
+             Icon="icon_t.png">
+            <ShellContent Route="tataNexon"
+                          Title ="Tata Nexon"
+                          Icon="icon_t.png"
+                          ContentTemplate="{DataTemplate views:TataNexonPage}"/>
+            <ShellContent Route="tataHarrier"
+                          Title="Tata Harrier"
+                          Icon="icon_t.png"
+                          ContentTemplate="{DataTemplate views:TataHarrierPage}"/>
+        </Tab>
+        <ShellContent Route="ford"
+                      Title="Ford"
+                      Icon="icon_f.png"
+                      ContentTemplate="{DataTemplate views:FordPage}"/>
+        <ShellContent Route="kia"
+                      Title="Kia"
+                      Icon="icon_k.png"
+                      ContentTemplate="{DataTemplate views:KiaPage}"/>
+        <ShellContent Route="honda"
+                      Title="Honda"
+                      Icon="icon_h.png"
+                      ContentTemplate="{DataTemplate views:HondaPage}"/>
+    </TabBar>
+</Shell>

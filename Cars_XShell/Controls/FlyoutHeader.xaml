@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Cars_XShell.Controls.FlyoutHeader"
+    HeightRequest="150">
+    <RelativeLayout BackgroundColor="black" Opacity="1">
+        <Image Source="car_banner.png" Aspect="AspectFill" Opacity="0.6" RelativeLayout.WidthConstraint="350"/>
+        <Label Text="Cars" TextColor="White" FontSize="Title" FontAttributes="Bold" RelativeLayout.XConstraint="50" RelativeLayout.YConstraint="50"/>
+    </RelativeLayout>
+</ContentView>

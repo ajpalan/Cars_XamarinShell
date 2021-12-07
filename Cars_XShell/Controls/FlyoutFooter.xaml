@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Cars_XShell.Controls.FlyoutFooter"
+    HeightRequest="80">
+    <StackLayout Background="black" Opacity="0.8">
+        <Label Text="Flyout Footer" TextColor="Gray" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+    </StackLayout>
+</ContentView>

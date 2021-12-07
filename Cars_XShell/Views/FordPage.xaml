@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:data="clr-namespace:Cars_XShell.Data"
+    x:Class="Cars_XShell.Views.FordPage"
+    Title="Ford">
+     <StackLayout>
+        <CollectionView Margin="20"
+                        ItemsSource="{Static data:FordCarsData.FordCars}"
+                        ItemTemplate="{StaticResource CarTemplate}"
+                        SelectionMode="Single"
+                        SelectionChanged="CollectionView_SelectionChanged"
+            />
+    </StackLayout>
+</ContentPage>

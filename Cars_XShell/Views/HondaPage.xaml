@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Cars_XShell.Views.HondaPage"
+    Title="Honda">
+     <StackLayout HorizontalOptions="CenterAndExpand" Spacing="30" Style="{StaticResource carDetailPageSatckStyle}">
+        <Label Text="Honda Civic" FontSize="Large" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+        <Image x:Name="imgCar" Source="honda_civic.png" WidthRequest="400" HeightRequest="200"/>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Cars_XShell.App">
+    <Application.Resources>
+        <Style TargetType="StackLayout" x:Key="carDetailPageSatckStyle">
+            <Setter Property="Margin" Value="0, 50"/>
+        </Style>
+
+           <DataTemplate x:Key="CarTemplate">
+            <Grid Padding="10"
+                  RowDefinitions="Auto"
+                  ColumnDefinitions="Auto,Auto">
+                <Image Source="{Binding ImageUrl}" 
+                       Aspect="AspectFill"
+                       HeightRequest="60" 
+                       WidthRequest="60" />
+                <Label Margin="10, 0"
+                       Grid.Column="1" 
+                       Text="{Binding CarName}" 
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"/>             
+            </Grid>
+        </DataTemplate>
+    </Application.Resources>
+</Application>
